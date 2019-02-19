@@ -23,7 +23,10 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-	<style type="text/css">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+		<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+
+		<style type="text/css">
 		.music-rotate {
 			position: fixed;
 			width: 40px;
@@ -49,7 +52,59 @@
 		        -webkit-transform: rotate(360deg);
 		    }
 		}
-	</style>
+		.map-rotate {
+			position: fixed;
+			width: 40px;
+			height: 40px;
+			bottom: 15px;
+			right: 10px;
+			background: url('./images/map.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 9999;
+			-webkit-transform: rotate(360deg);
+			animation: rotation 3s linear infinite;
+			-moz-animation: rotation 3s linear infinite;
+			-webkit-animation: rotation 3s linear infinite;
+			-o-animation: rotation 3s linear infinite;
+			animation-play-state: paused;
+		}
+		@-webkit-keyframes rotation{
+			from {
+				-webkit-transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+			}
+		}
+
+		.map-rotate2 {
+			position: fixed;
+			width: 40px;
+			height: 40px;
+			bottom: 15px;
+			right: 10px;
+			background: url('./images/map.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: 9999;
+			-webkit-transform: rotate(360deg);
+			animation: rotation 3s linear infinite;
+			-moz-animation: rotation 3s linear infinite;
+			-webkit-animation: rotation 3s linear infinite;
+			-o-animation: rotation 3s linear infinite;
+			animation-play-state: paused;
+		}
+		@-webkit-keyframes rotation{
+			from {
+				-webkit-transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+			}
+		}
+
+		</style>
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	
@@ -89,23 +144,9 @@
 			<div class="row">
 
 				<div class="col-xs-2">
-					 <!--标题 fh5co-logo 英文生效 字体渲染 -->
 					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
 				</div>
-				<!-- 多级 菜单栏导航  -->
-				<!--<div class="col-xs-10 text-right menu-1">
-					<ul>
-						<li class="active"><a href="index.html">主页</a></li>
-						<li><a href="about.html">我们的故事</a></li>
-						&lt;!&ndash; 多级标题备用 &ndash;&gt;
-						<li class="has-dropdown">
-							<a href="#">多级标题链接备用</a>
-							<ul class="dropdown">
-								<li><a href="gallery.html">画廊</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>-->
+
 			</div>
 			
 		</div>
@@ -124,7 +165,6 @@
 							<h2>We Are Getting Married ！</h2>
 							<!-- 倒计时组件  -->
 							<div class="simply-countdown simply-countdown-one"></div>
-							<!--<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>-->
 						</div>
 					</div>
 				</div>
@@ -136,10 +176,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>禀天地</h2>
+					<h2>婚礼</h2>
 					<span>禀天地，告神明，祈泽天下</span>
-					<h3>2019.01.20 </h3>
-					<p> 农历比较复杂的表达 XX年</p>
+					<h3>2019.03.12 </h3>
+					<p> 己亥年 【猪年】 丁卯月 【二月】 戊申日 【初六】</p>
+					<H3> 相关位置： </H3>
+					<p><a href="map.html">♂ 于河南省林州市林隆小区</a></p>
+					<p><a href="map2.html">♀ 于河南省林州市青林 </a></p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -208,14 +251,26 @@
 									<div class="event-col">
 										<i class="icon-calendar"></i>
 										<span>2019</span>
-										<span>13.14</span>
+										<span>03.07</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
 										<span>2019</span>
-										<span>13.14</span>
+										<span>03.12</span>
 									</div>
-									<p> 酒席安排时间细则.</p>
+
+									<div>
+										<p>公历 2019-03-07 至 2019-03-11</p>
+										<p><a href="map.html">♂ 于河南省林州市林隆小区</a></p>
+										<p><a href="map2.html">♀ 于河南省林州市青林 </a></p>
+										<p><br>宴请宾客，已敬备喜筵,恭请各位莅临寒舍。车位紧张，建议低碳出行。</p>
+
+
+										<p>公历 2019-03-12 </p>
+										<p><a href="map.html">♂ 于河南省林州市林隆小区</a></p>
+										<p> 一堂缔约，良缘永结，载明鸳谱，宴天下来者，</p>
+									</div>
+
 								</div>
 							</div>
 						</div>
@@ -224,60 +279,7 @@
 			</div>
 		</div>
 	</div>
-	<!--  时间轴  -->
-	<!--<div id="fh5co-couple-story">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>We Love Each Other</span>
-					<h2>Our Story</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-gallery-1.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">First We Meet</h3>
-									<span class="date">December 25, 2015</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-gallery-2.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">First Date</h3>
-									<span class="date">December 28, 2015</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-gallery-3.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">In A Relationship</h3>
-									<span class="date">January 1, 2016</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>-->
+
 
 	<div id="fh5co-gallery" class="fh5co-section-gray">
 		<div class="container">
@@ -375,7 +377,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+	<!--<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -426,61 +428,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
- 	<!--朋友祝福-->
-	<!--<div id="fh5co-testimonial">
-		<div class="container">
-			<div class="row">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Best Wishes</span>
-						<h2>Friends Wishes</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 animate-box">
-						<div class="wrap-testimony">
-							<div class="owl-carousel-fullwidth">
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-gallery-1.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-gallery-2.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-gallery-3.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>-->
+
 
 	<!--联系方式-->
 	<div id="fh5co-services" class="fh5co-section-gray">
@@ -536,57 +485,25 @@
 
 				</div>
 
-				<div class="col-md-6 animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-						<a href="#" class="popup-vimeo"><i class="icon-video2"></i></a>
-						<div class="overlay"></div>
-					</div>
-				</div>
+				<!--<div class="col-md-6 animate-box">-->
+					<!--<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">-->
+						<!--<a href="#" class="popup-vimeo"><i class="icon-video2"></i></a>-->
+						<!--<div class="overlay"></div>-->
+					<!--</div>-->
+				<!--</div>-->
 			</div>
 
 			
 		</div>
 	</div>
 
-	<!--不太好看 邀请回复
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>connect us</h2>
-					<p> you can connect us by phone,QQ,Wechat etc.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<span class="icon">
-								<i class="icon-qq"><font color="#f0f8ff">QQ: ♂ 996238921 💗 ♀ 1160121151 </font></i>
-							</span>
-						</div>
-
-						<div class="col-md-4 col-sm-4">
-							<span class="icon">
-								<i class="icon-chat"><font color="#f0f8ff">wechat: ♂ lovegyxin 💗 ♀ lovezfxiang  </font></i>
-							</span>
-						</div>
-
-						<div class="col-md-4 col-sm-4">
-							<span class="icon">
-								<i class="icon-phone"><font color="#f0f8ff">phone: ♂ 166-0115-6033 💗 ♀ 166-1970-8295  </font></i>
-							</span>
-						</div>
 
 
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>-->
 
-	<footer id="fh5co-footer" role="contentinfo">
+
+
+
+		<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
 			<div class="row copyright">
@@ -595,14 +512,6 @@
 						<small class="block">&copy; 2019 guoyixin.<br> All Rights Reserved.</small>
 						<small class="block">Designed by zhangfuxiang </small>
 					</p>
-					<!--<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href=""><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>-->
 				</div>
 			</div>
 
@@ -614,6 +523,8 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	<div id='music_rotate' class='music-rotate'></div>
+
+
 	<audio loop id="music" autoplay preload>
 		<source type='audio/mpeg' src='music/backmusic.mp3' />
 	</audio> 
@@ -640,6 +551,8 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.12&key=21b8cfe53d94f0bf5a3e81ea6b258db5"></script>
+
 
 	<script>
 		$(document).ready(function() {
@@ -660,15 +573,15 @@
 					music[0].play();
 				}
 			});
+
 		});
-		
-	    // var d = new Date();
-		// d.setFullYear(2019,1,20,0,0,0);
-	    // default example
+
+
+
 	    simplyCountdown('.simply-countdown-one', {
 	        year: 2019,
-	        month: 2,
-	        day: 1,
+	        month: 3,
+	        day: 12,
 			seconds: 0,
 			words: {
 				days: 'day',
@@ -681,14 +594,12 @@
 
 	    });
 
-	    // //jQuery example
-	    // $('#simply-countdown-losange').simplyCountdown({
-	    //     year: d.getFullYear(),
-	    //     month: d.getMonth() + 1,
-	    //     day: d.getDate(),
-	    //     enableUtc: false
-	    // });
+
+
+
+
 	</script>
+
 
 	</body>
 </html>
